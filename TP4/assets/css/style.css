@@ -1,0 +1,227 @@
+/* Reset CSS */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+Typo
+*/
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header {
+    background-color: white;
+    margin: 0;
+    box-shadow: #2e2e2e 0px 10px 10px 0px;
+    position: relative;
+    z-index: 100;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 1rem;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: .5rem 1rem;
+}
+
+
+main {
+    display: flex;
+}
+
+main section {
+    width: 60%;
+}
+
+main aside {
+    width: 40%;
+    border-left: 1px solid gray;
+    background: repeating-linear-gradient(
+        45deg,
+        #F2F2F2,
+        #F2F2F2 5px,
+        #D2D2D2 5px,
+        #D2D2D2 6px
+        );
+    padding: 2rem;
+}
+
+main aside nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+main aside nav ul li {
+    display: block;
+    margin-bottom: 1rem;
+}
+main aside nav ul li a{
+    display: block;
+    padding: 0.5rem;
+    background-color: white;
+    color:black;
+}
+main aside nav ul li a:hover {
+    color:white;
+    background-color: black;
+}
+
+section.blog {
+    padding: 1rem;
+}
+
+section.blog article {
+    display: flex;
+    margin: 0 0 2rem 0;
+    background: white;
+    position: relative;
+    padding: .5rem .5rem;
+    border: 1px solid;
+}
+
+section.blog article figure{
+margin: 0;
+}
+
+figure img {
+    vertical-align: middle;
+}
+
+section.blog article figcaption{
+display: inline-block;
+background-color: black;
+color:white;
+font-size: .8rem;
+position: absolute;
+padding: 1rem;
+left: 0;
+bottom: 0;
+}
+
+section.blog article .content{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+section.blog article .content .link{
+margin-top: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a  {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 840px) {
+	* {
+		box-sizing: border-box;
+	}
+    
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    section.blog {
+        width: 100%;
+    }
+    section.blog article {
+        flex-direction: column;
+    }
+    section.blog article figure {
+        position: relative;
+    }
+    aside {
+        display: none;
+    }
+}
