@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Selecteur</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            </style>
+        <style> 
+
+            * {
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            h1 { 
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            h2 {
+                font-size:2rem;
+                font-weight: 700;
+            } 
+
+            .bloc, .bloc2 { /* Regroupement de combinaison */
+                border:1px solid #C1C1C1;
+                padding: 1rem;margin-bottom: 2rem;
+            }
+            p {
+                color:#232323;
+            }
+            p + h2 { /* Selecteur d'adjacence direct : cible le h2 qui suit directement un paragraphe */
+                margin-top:3rem;
+            }
+
+            h2 ~ p { /* selecteur d'adjacende indirect : cible tous les p après un h2 */ 
+                color:red;
+            }
+
+
+            .bloc > h2 { /* selecteur de descendance */
+                font-size: 1.5rem;
+                font-weight: 600;
+                color:salmon;
+            }
+
+            .bloc > h2 + p { /* je cible ici le paragraphe qui se situe directement après un h2 */
+                color:rebeccapurple;
+            }
+
+            .bloc2 > h2 ~ p { /* je cible ici le paragraphe qui se situe directement après un h2 */
+                color:rebeccapurple;
+            }
+            p + p {
+                font-weight: bold;
+            }
+         
+        </style>
+    </head>
+    <body>
+        <h1>Les sélecteurs</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus asperiores, veritatis veniam, est fuga fugiat nesciunt odit debitis nisi pariatur, cumque minus obcaecati consequatur. Eos placeat unde nisi asperiores.</p>
+
+        <h2>Titre de niveau 2</h2>
+      
+       <div class="bloc">
+           <h2>Titre de niveau 2</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+           <h2>Titre de niveau 2</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+       </div>
+
+       <div class="bloc2">
+        <h2>Titre de niveau 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+        <h2>Titre de niveau 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+    <h2>test</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt assumenda, voluptatem tenetur eveniet libero animi vitae, facere exercitationem culpa officia dignissimos ullam! A quibusdam dolorum, ad quam possimus iure!</p>
+
+
+     
+    </body>
+</html>

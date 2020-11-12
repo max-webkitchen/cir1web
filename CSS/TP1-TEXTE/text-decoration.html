@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Text decoration / Text transform</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <!-- <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            </style> -->
+        <style> 
+
+            * {
+                font-family: 'Montserrat', sans-serif;
+            }
+            /* * {
+                font-size: 20px;
+            } */
+            .barre {
+                text-decoration:line-through;
+            }
+
+            .souligne {
+                text-decoration:underline;
+            }
+
+            .overline {
+                text-decoration:overline;
+            }
+          
+            .capitalize {
+                text-transform: capitalize;
+            }
+
+            .lowercase {
+                text-transform: lowercase;
+            }
+
+            .uppercase {
+                text-transform: uppercase;
+            }
+
+            .full-width {
+                text-transform: full-width;
+            }
+
+            .letter-spacing {
+                letter-spacing: .5rem;
+                font-size:3rem;
+                font-weight: 900;
+            }
+
+            .word-spacing {
+                word-spacing : 2rem;
+            }
+
+            .text-shadow {
+                /* offset-x | offset-y | blur-radius | color */
+                text-shadow: 5px 5px 3px rgba(0,0,0,.5);
+            }
+
+            /* text-transform :
+            | capitalize | lowercase | uppercase | full-width
+            */
+
+        </style>
+    </head>
+    <body>
+
+        <p class="barre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, placeat reiciendis laborum repellendus veniam dicta, amet harum fugit nihil aspernatur optio vero quos architecto totam aut voluptates. Ipsum, quas asperiores?</p>
+
+        <p class="souligne">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ea iure temporibus, quibusdam itaque consequatur, ipsum autem eligendi corporis quia omnis quasi similique expedita unde error. Porro, nesciunt. Beatae, ipsam.</p>
+
+        <p class="overline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ea iure temporibus, quibusdam itaque consequatur, ipsum autem eligendi corporis quia omnis quasi similique expedita unde error. Porro, nesciunt. Beatae, ipsam.</p>
+
+        <p class="lowercase">LOREM IPSUM DOLOR, SIT AMET CONSECTETUR ADIPISICING ELIT. PORRO QUAE VOLUPTATIBUS EIUS BEATAE, EUM AT TEMPORIBUS NESCIUNT PARIATUR EX OFFICIIS, VELIT NIHIL VOLUPTATES DOLORIBUS VOLUPTATE REPREHENDERIT, ITAQUE ODIT EXPLICABO PRAESENTIUM.</p>
+
+        <p class="capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ea iure temporibus, quibusdam itaque consequatur, ipsum autem eligendi corporis quia omnis quasi similique expedita unde error. Porro, nesciunt. Beatae, ipsam.</p>
+
+        <p class="uppercase">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ea iure temporibus, quibusdam itaque consequatur, ipsum autem eligendi corporis quia omnis quasi similique expedita unde error. Porro, nesciunt. Beatae, ipsam.</p>
+
+        <h1 class="letter-spacing">Lorem ipsum dolor</h1>
+
+
+        <h1 class="uppercase letter-spacing word-spacing">Lorem ipsum dolor</h1>
+
+        
+        <h1 class="uppercase letter-spacing word-spacing text-shadow">Lorem ipsum dolor</h1>
+
+     
+    </body>
+</html>

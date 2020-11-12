@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font face externe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        * { font-family:'Montserrat', Verdana, sans-serif;} 
+        h1 {
+            /*font-size:36px;*/
+            font-size:2.25rem; /* solution à priviligier */
+            font-weight: 900;
+            color:pink;
+            text-shadow: 3px 3px 3px #000;
+        }
+        h2 {
+            font-size:1.5rem;
+            font-weight:500;
+            color:rgba(0,0,255,.5);
+        }
+        p {
+            color:#C3C3C3;
+        }
+
+        p + h2 {
+            margin-top:2.15rem;
+        }
+        .violet {
+            color:rebeccapurple!important;
+        }
+        h2:nth-of-type(2){
+            color:red;
+        }
+    </style> 
+</head>
+<body>
+    <h1>Font face externe</h1>
+
+    <h2>Titre de niveau 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis cumque ratione quasi fuga! Dicta illo accusantium perspiciatis laboriosam error adipisci laborum soluta harum commodi? Distinctio amet saepe natus voluptates.</p>
+    <h2 class="violet">Titre de niveau 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis cumque ratione quasi fuga! Dicta illo accusantium perspiciatis laboriosam error adipisci laborum soluta harum commodi? Distinctio amet saepe natus voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis cumque ratione quasi fuga! Dicta illo accusantium perspiciatis laboriosam error adipisci laborum soluta harum commodi? Distinctio amet saepe natus voluptates.</p>
+    <h3>TEst</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, error! Modi ullam obcaecati illo autem nostrum mollitia culpa nisi reiciendis dicta, vel, expedita sequi. Consectetur incidunt delectus eligendi quas reiciendis.</p>
+
+</body>
+</html>
