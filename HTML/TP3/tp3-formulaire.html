@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulaire inscription</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <form action="" method="get">
+            <div>
+                <img src="./assets/img/logo-isen-yncrea-BD-1.jpg" alt="Logo Yncrea" srcset="">
+            </div>
+            <div>
+                <input type="radio" id="mme" name="genre" value="madame"><label for="mme">Madame</label>
+                <input type="radio" id="m" name="genre" value="monsieur"><label for="m">Monsieur</label>
+            </div>
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" value="" placeholder="Nom de famille" required="required">
+            </div>
+            <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" value="" placeholder="Prénom"  required="required">
+            </div>
+            <div>
+                <label for="date-naissance">Date de naissance</label>
+                <input type="date" name="date-naissance" id="date-naissance">
+            </div>
+
+            <div>
+                <label for="pays">Pays</label>
+                <select name="pays" id="pays">
+                    <optgroup label="Europe">
+                        <option value="allemagne">Allemagne</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="france" selected="selected">France</option>
+                        <option value="italie">Italie</option>
+                        <option value="luxembourg">Luxembourg</option>
+                        <option value="autre-pays-europe">Autre pays d'Europe</option>
+                    </optgroup>
+                    <optgroup label="Afrique">
+                        <option value="algerie">Algérie</option>
+                        <option value="angola">Angola</option>
+                        <option value="benin">Bénin</option>
+                        <option value="botswana">Botswana</option>
+                        <option value="burkina-faso">Burkina Faso</option>
+                        <option value="burundi">Burundi</option>
+                        <option value="cameroun">Cameroun</option>
+                        <option value="cap-vert">Cap-Vert</option>
+                        <option value="autre-pays-afrique">Autre pays d'Afrique</option>
+                    </optgroup>
+                    <optgroup label="Autre">
+                        <option value="autre-pays-non-mentionne">Autre pays non mentionné</option>
+                    </optgroup>
+                </select>
+            
+            </div>
+
+            <div>
+                <label for="desc">Description</label>
+                <textarea name="desc" id="desc" cols="30" rows="10" required="required" placeholder="Quelques mots pour vous décrire"></textarea>
+            </div>
+
+
+            <fieldset>
+                <legend>Niveau de langue</legend>
+                <div>
+                    <input type="range" id="francais" name="francais"
+                           min="0" max="10" step="0.5">
+                    <label for="francais">Francais</label>
+                  </div>
+                  <div>
+                    <input type="range" id="allemand" name="allemand"
+                           min="0" max="10" step="0.5">
+                    <label for="allemand">Allemand</label>
+                  </div>
+                  <div>
+                    <input type="range" id="anglais" name="anglais"
+                           min="0" max="10" step="0.5">
+                    <label for="anglais">Anglais</label>
+                  </div>
+                  <div>
+                    <input type="range" id="espagnol" name="espagnol"
+                           min="0" max="10" step="0.5">
+                    <label for="espagnol">Espagnol</label>
+                  </div>
+                  <div>
+                    <input type="range" id="italien" name="italien"
+                           min="0" max="10" step="0.5">
+                    <label for="italien">Italien</label>
+                  </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Centre.s d'intérêt.s</legend>
+                <div><input type="checkbox" id="html" name="competences" value="html">
+                <label for="html">HTML</label></div>
+                <div><input type="checkbox" id="js" name="competences" value="js">
+                <label for="js">JS</label></div>
+                <div><input type="checkbox" id="c" name="competences" value="c">
+                <label for="c">C</label></div>
+                <div><input type="checkbox" id="physique" name="competences" value="physique">
+                <label for="physique">Physique</label></div>
+            </fieldset>
+
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="" placeholder="ex: maxime@webkitchen.fr" required="required">
+            </div>
+            <div>
+                <label for="password">Choisissez un mot de passe</label>
+                <input type="password" name="password" id="password" value="" required="required">
+            </div>
+
+            <div>
+                <label for="calcul">5 x 5</label>
+                <input type="number" name="calcul" id="calcul" value="" placeholder="Merci de faire le calcul" required="required">
+            </div>
+          
+            <div class="text-center">
+                <input type="submit" value="Envoyer">
+            </div>
+
+
+        </form>
+    </body>
+</html>

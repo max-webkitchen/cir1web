@@ -1,0 +1,72 @@
+
+body {
+    background-color: #F2F2F2;
+    margin: 2rem 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    margin:auto;
+    box-shadow: #2e2e2e 10px 42px 50px -50px;
+}
+
+form > div {
+    padding: 1rem 0;
+    display: flex;
+}
+
+form > div:not(:first-child){
+    border-top:1px solid #F4F4F4;
+}
+
+form > div label {
+    width: 150px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+ input, select , textarea {font-family: 'Courier New', Courier, monospace; padding: .5rem; font-size: 1rem;}
+
+input[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: #E1251B;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border:none;
+    margin:auto 
+}
+
+fieldset {
+    margin: 1rem 0;
+}
+
+legend {
+    font-weight: bold;
+    margin : 0 auto;
+    padding: 0 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}

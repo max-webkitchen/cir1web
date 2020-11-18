@@ -1,0 +1,47 @@
+.calendar {
+    border:none;
+    padding: 0;
+    margin:0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calendar th {
+    background-color: darkgray;
+    padding: 1rem;
+}
+
+.calendar td {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border: 1px solid #E2E2E2;
+}
+.calendar td.math {
+    background-color: pink;
+}
+.calendar td.algo {
+    background-color: rebeccapurple;
+    color:white;
+}
+.calendar td.anglais {
+    background-color: orange;
+}
+.calendar td.physique {
+    background-color: mediumpurple;
+}
+.calendar td.apero {
+    background-color: greenyellow;
+}
+.calendar td.electricite {
+    background-color: rgb(104, 172, 250);
+}
+.calendar td.pause {
+    background: repeating-linear-gradient(
+    45deg,
+    #F2F2F2,
+    #F2F2F2 5px,
+    #D2D2D2 5px,
+    #D2D2D2 6px
+    );
+}

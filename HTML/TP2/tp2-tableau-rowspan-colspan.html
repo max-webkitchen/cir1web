@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/emploi-du-temps.css">
+</head>
+<body>
+    <h1>Emploi du temps - tableau rowspan colspan - intégration feuille de style externe</h1>
+    <table class="calendar">
+        <thead>
+           <tr> 
+               <th width="70">H.</th>
+               <th>Lundi</th>
+               <th>Mardi</th>
+               <th>Mercredi</th>
+               <th>Jeudi</th>
+               <th>Vendredi</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8h-10h</td>
+                <td rowspan="2" class="math">Math</td>
+                <td class="algo">Algo</td>
+                <td class="pause"></td>
+                <td class="math">Math</td>
+                <td class="anglais">Anglais</td>
+            </tr>
+            <tr>
+                <td>10h-12h</td>
+                <td class="math">Math</td>
+                <td class="physique">Physique</td>
+                <td class="anglais" rowspan="2">Anglais</td>
+                <td class="electricite">Electricité</td>
+            </tr>
+            <tr>
+                <td>12h-14h</td>
+                <td class="pause" colspan="3"></td>
+                <td class="physique">Physique</td>
+           
+            </tr>
+            <tr>
+                <td>14h-16h</td>
+                <td rowspan="2" class="electricite">Electricité</td>
+                <td class="math">Math</td>
+                <td class="physique">Physique</td>
+                <td class="pause"></td>
+                <td class="pause"></td>
+            </tr>
+            <tr>
+                <td>16h-18h</td>
+                <td class="anglais">Anglais</td>
+                <td class="pause"></td>
+                <td class="physique">physique</td>
+                <td class="apero">Apéro</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
