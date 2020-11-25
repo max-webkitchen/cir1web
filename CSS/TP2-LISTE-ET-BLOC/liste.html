@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        * {
+            font-family: 'Montserrat', Verdana, sans-serif;
+        }
+
+        hr {
+            width: 100px;
+            height: 1px;
+            margin: auto;
+            margin: 3rem auto;
+            border: none;
+            background-image: linear-gradient(270deg, #DE00FF 0%, #4B65C0 100%);
+        }
+
+        ul.puce-interne {
+            list-style-position: inside;
+        }
+
+        ul.background {
+            background-color: grey;
+            padding: 1rem;
+            margin: 0;
+        }
+
+        ul.background li {
+            background-color: hotpink;
+            margin: .5rem 0;
+        }
+ 
+        ul.pucepersonnalise {
+            list-style-image: url("./assets/media/ghost.svg");
+        }
+
+        ul.pucepersonnalise li {
+            background-color: hotpink;
+            margin: .5rem 0;
+        }
+
+        ul.pucepersonnalisebefore {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pucepersonnalisebefore li {
+            background-color: #F1F1F1;
+            margin: .5rem 0;
+        }
+
+        ul.pucepersonnalisebefore li:before {
+            content: "";
+            width: 16px;
+            height: 19px;
+            display: inline-block;
+            background-image: url("./assets/media/ghost.svg");
+            background-size: cover;
+            margin-right: .5rem;
+        }
+
+        ol.alpha {
+            list-style-type: upper-alpha;
+        }
+
+        ol.leadingzero {
+            list-style-type: decimal-leading-zero;
+        }
+
+        ol.customol {
+            counter-reset: mon-compteur;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ol.customol li {
+            counter-increment: mon-compteur;
+            margin: 1rem 0;
+            display: flex;
+            align-items: baseline;
+
+        }
+        ol.customol li:before {
+            content: "0" counter(mon-compteur);
+            font-weight: bolder;
+            background-color: blue;
+            border-radius:20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            margin-right: 1rem;
+            color:white;
+            flex: 0 0 40px;
+        }
+        ol.customol li:nth-child(1):before {
+            background-image: linear-gradient(270deg, #DE00FF 0%, #4B65C0 100%);
+        }
+        ol.customol li:nth-child(2):before {
+            background-image: linear-gradient(90deg, #DE00FF 0%, #4B65C0 100%);
+            font-size: 1.1rem;
+        }
+        ol.customol li:nth-child(3):before {
+            background-image: linear-gradient(135deg, #DE00FF 0%, #4B65C0 100%);
+            font-size: 1.3rem;
+        }
+        ol.customol li:nth-child(4):before {
+            background-image: linear-gradient(25deg, #DE00FF 0%, #4B65C0 100%);
+            font-size: 1.4rem;
+        }
+
+        ul.mention {
+            list-style: none;
+            margin: 0;
+            padding: 1rem;
+            margin: 0;
+            background: pink;
+            text-align: center;
+        }
+        ul.mention li {
+            display: inline-block;
+        }
+        ul.mention li a {
+            display: block;
+            text-decoration: none;
+            padding: .5rem;
+            color:black;
+        }
+        ul.mention li a:hover {
+            background-color:black;
+            color:white;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <h3>Comportement natif de la liste</h3>
+    <ul>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+    </ul>
+
+    <hr>
+
+    <h3>Position puce inside de la liste</h3>
+    <ul class="puce-interne">
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+    </ul>
+
+    <hr>
+
+
+    <h3>Les éléments ul et li ont un display bloc par défaut : ils ont de ce fait accès à toute les propriétés de bloc
+        (margin, padding, border etc.)</h3>
+    <ul class="background">
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+    </ul>
+
+    <hr> 
+
+    <h3>Personnalisez les puces en fonction de la charte graphique</h3>
+    <ul class="pucepersonnalise">
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+    </ul>
+
+
+    <hr> 
+
+
+    <h3>Personnalisez les puces en fonction de la charte graphique avec l'usage du pseudo sélecteur :before.<br>
+        <em>Personnellement je suis plus adepte de cette technique</em></h3>
+    <ul class="pucepersonnalisebefore">
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+        <li>Élément liste non ordonné</li>
+    </ul>
+
+
+
+
+    <hr>
+
+
+    <h3>Liste ordonnée par défaut</h3>
+    <ol>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+    </ol>
+
+    <hr>
+    <h3>Liste ordonnée par avec un zero devant le chiffre</h3>
+    <ol class="leadingzero">
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+    </ol>
+
+
+    <hr>
+
+    Consulter l'intégralité des style type disponible sur :
+    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type"
+        target="blank">https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type</a>
+    <hr>
+
+    <h3>Liste ordonnée par alphabéthique</h3>
+    <ol class="alpha">
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+    </ol>
+
+    <hr>
+
+    <h3>Liste ordonnée par personnalisé</h3>
+    <ol class="customol">
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+        <li>Élément liste ordonné</li>
+    </ol>
+
+
+
+    <hr>
+    <h3>Liste non ordonnée de lien par exemple pour une navigation</h3>
+    <ul class="mention">
+        <li><a href="">Lien 1</a></li>
+        <li><a href="">Lien 2</a></li>
+        <li><a href="">Lien 3</a></li>
+        <li><a href="">Lien 4</a></li>
+    </ul>
+
+    <hr>
+
+
+
+
+</body>
+
+</html>
