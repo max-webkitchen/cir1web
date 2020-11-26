@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloc et position </title>
+
+    <style>
+        div {
+            width: 300px;
+            min-height: 300px;
+            background-color: pink;
+            margin-bottom: 2rem;
+           margin-left:auto;
+           margin-right: auto;
+            position: relative;
+        }
+        div p {
+            position: absolute;
+            background-color: black;
+            color:white;
+            padding: 2rem;
+            right: 0;
+            margin: 0;
+        }
+        div + div {
+            background-color: darkgrey;
+            padding: 3rem;
+            box-sizing: border-box;
+          
+           /* // overflow: hidden; */
+        }
+
+        div + div + div {
+            background-color: rebeccapurple;
+        }
+        p {
+            clear: both;
+        }
+
+        div.carre {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            position: relative;
+        }
+        div.carre div {
+            float: none;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            min-height: auto;
+            margin: 0;
+            padding:0;
+        }
+
+        div.carre div:nth-child(1){
+            top: 0;
+            left: 0;
+        }
+        div.carre div:nth-child(2){
+            top: 0;
+            right: 0;
+        }
+
+        div.carre div:nth-child(3){
+            bottom: 0;
+            left: 0;
+        }
+        div.carre div:nth-child(4){
+            bottom: 0;
+            right: 0;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div><p>coucou</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ad rerum unde dolorem nihil ut non minima eos beatae tenetur a amet doloribus aperiam quibusdam, vero voluptate harum deleniti perferendis?</div>
+    <div>Debitis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ad rerum unde dolorem nihil ut non minima eos beatae tenetur a amet doloribus aperiam quibusdam, vero voluptate harum deleniti perferendis?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ad rerum unde dolorem nihil ut non minima eos beatae tenetur a amet doloribus aperiam quibusdam, vero voluptate harum deleniti perferendis?</div>
+
+    <p>qsfdjqsld fkqlsd fjlqs djflqsdfqsdf</p>
+
+    <div class="carre">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+</body>
+</html>
