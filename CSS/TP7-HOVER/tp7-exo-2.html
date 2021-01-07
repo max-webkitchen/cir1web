@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+         nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        nav ul li a {
+            padding: 1rem;
+            display: block;
+            text-decoration: none;
+            background-color: #D1D1D1;
+            transition: background-color .25s ease-out;
+            position: relative;
+            color:black;
+        }
+        nav ul li a:hover, nav > ul li:hover > a {
+            background-color: peru;
+            color:white;
+        }
+        
+      
+        nav > ul li a + ul {
+            flex-direction: column;
+            height: 0px;
+            display: none;
+            position: absolute;
+        }
+        nav > ul li:hover a + ul {
+            display: flex;
+            height: auto;
+        }
+
+        nav ul li a + ul li a {
+            background-color: #F1F1F1;
+        }
+        nav ul li a + ul li a:hover {
+            background-color: rebeccapurple;
+        } */
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li>
+                <a href="">Lien niveau 1</a>
+                <ul>
+                    <li>
+                        <a href="">Lien niveau 2</a>
+                    </li>
+                    <li>
+                        <a href="">Lien niveau 2</a>
+                    </li>
+                    <li>
+                        <a href="">Lien niveau 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Lien niveau 1</a></li>
+            <li><a href="">Lien niveau 1</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

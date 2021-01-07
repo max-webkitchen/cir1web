@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        section.gray {
+            background-color: rgba(0, 0, 0, .1);
+            padding-bottom: 4rem;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: .75rem;
+            color: rgba(38, 38, 52, .6);
+            margin-bottom: 1rem;
+
+        }
+
+        .description {
+            font-size: .875rem;
+            line-height: 1.6;
+            color: rgba(38, 38, 52, .6);
+            margin-bottom: 1rem;
+        }
+
+        a.link {
+            color: #262634;
+            font-size: .875rem;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+        }
+
+        a.link:after {
+            content: "";
+            width: 20px;
+            height: 12px;
+            background: url(images/arrow.svg) no-repeat;
+            display: block;
+            margin-left: .5rem;
+            transition: all .5s ease;
+        }
+
+        a.link:hover:after {
+            margin-left: .8rem;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+        }
+
+        section ul {
+            list-style: none;
+            margin: 0 0 2rem 0;
+            padding: 0;
+            display: flex;
+        }
+
+        ul.vertical img {
+            width: 100%;
+            object-fit: cover;
+            height: 230px;
+            display: block;
+        }
+
+        ul.vertical li {
+            flex: 1;
+            margin: 0 1rem;
+            background-color: white;
+        }
+
+        ul.vertical li:first-of-type {
+            margin-left: 0;
+        }
+
+        ul.vertical li:nth-child(2) {
+            transform: translateY(2rem);
+        }
+
+        ul.vertical li:last-of-type {
+            margin-right: 0;
+        }
+
+        figure {
+            padding: 0;
+            margin: 0;
+        }
+
+        article {
+            box-shadow: 0 32px 48px -16px rgba(0, 0, 0, 0.12);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 2rem;
+            flex: 2;
+        }
+
+        .content h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .link {
+            margin-top: auto;
+        }
+
+        ul.horizontal {
+            flex-direction: column;
+        }
+
+        ul.horizontal article {
+            flex-direction: row;
+        }
+
+        ul.horizontal li {
+            flex: 1;
+            margin: 0 1rem;
+            background-color: white;
+            width: 83%;
+            margin: 2rem 0;
+        }
+
+        ul.horizontal li:nth-child(2n) {
+            margin-left: auto;
+        }
+
+        ul.horizontal li:nth-child(2n) figure {
+            order: 2;
+        }
+
+        ul.horizontal li:nth-child(2n) .content {
+            order: 1;
+        }
+
+        ul.horizontal figure {
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex-basis: 50%;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.horizontal img {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            max-height: 370px;
+        }
+
+        @media screen and (max-width: 640px) {
+            section {
+                padding: 1rem;
+            }
+            ul.vertical img ,ul.horizontal img {
+                max-height: 230px;
+            } 
+
+            ul.vertical ,ul.horizontal article {
+                flex-direction: column;
+            }
+
+            ul.vertical li:nth-child(2) {
+            transform: none;
+            }
+            ul.vertical li, ul.horizontal li { 
+                margin:  0 0 2rem 0;
+                width: 100%;
+            }
+
+            ul.horizontal li:nth-child(2n) figure {
+                 order: 1;
+            }
+            ul.horizontal li:nth-child(2n) .content {
+                order: 2;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <article>
+        <figure><img src="images/2a9b4da6b49e6e3279df7b74652e037981a2b90b.png" alt="qsdf"></figure>
+        <div class="content">
+            <span class="date">21/07/2020</span>
+            <h3>Titre</h3>
+            <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum dolore et adipisci
+                rerum nemo ullam odit! Aperiam, natus error impedit nihil repudiandae, ipsam illum ea
+                fugiat adipisci, tempore est?
+            </p>
+            <a href="" class="link">Lire la suite</a>
+        </div>
+    </article>
+
+
+    <section class="gray">
+        <div class="container">
+            <h2>Titre de section</h2>
+           
+
+            <ul class="vertical">
+                <li>
+                    <article>
+                        <figure><img src="images/2a9b4da6b49e6e3279df7b74652e037981a2b90b.png" alt="qsdf"></figure>
+                        <div class="content">
+                            <span class="date">21/07/2020</span>
+                            <h3>Titre</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum dolore et adipisci
+                                rerum nemo ullam odit! Aperiam, natus error impedit nihil repudiandae, ipsam illum ea
+                                fugiat adipisci, tempore est?
+                            </p>
+                            <a href="" class="link">Lire la suite</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <figure><img src="images/126c5a178d422050adc4aecca13446ebd7693c25.png" alt="qsdf"></figure>
+                        <div class="content">
+                            <span class="date">21/07/2020</span>
+                            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum dolore et adipisci
+                                rerum nemo ullam odit! Aperiam, natus error impedit nihil repudiandae, ipsam illum ea
+                                fugiat adipisci, tempore est?
+                            </p>
+                            <a href="" class="link">Lire la suite</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <figure><img src="images/7fe076480b99ae92a6b5a2a75df7c57d2c300270.png" alt="qsdf"></figure>
+                        <div class="content">
+                            <span class="date">21/07/2020</span>
+                            <h3>Titre</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum dolore et adipisci
+                                rerum nemo ullam odit! Aperiam, natus error impedit nihil repudiandae, ipsam illum ea
+                                fugiat adipisci, tempore est?
+                            </p>
+                            <a href="" class="link">Lire la suite</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="white">
+        <div class="container">
+            <h2>Titre de section</h2>
+            <ul class="horizontal">
+                <li>
+                    <article>
+                        <figure><img src="images/a7fb89778553f67dd8814a945d105a2fb19406ec.png" alt="qsdf"></figure>
+                        <div class="content">
+                            <span class="date">21/07/2020</span>
+                            <h3>Titre</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum dolore et adipisci
+                                rerum nemo ullam odit! Aperiam, natus error impedit nihil repudiandae, ipsam illum ea
+                                fugiat adipisci, tempore est?
+                            </p>
+                            <a href="" class="link">Lire la suite</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <figure><img src="images/126c5a178d422050adc4aecca13446ebd7693c25.png" alt="qsdf"></figure>
+                        <div class="content">
+                            <span class="date">21/07/2020</span>
+                            <h3>Titre</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum dolore et adipisci
+                                rerum nemo ullam odit! Aperiam, natus error impedit nihil repudiandae, ipsam illum ea
+                                fugiat adipisci, tempore est?
+                            </p>
+                            <a href="" class="link">Lire la suite</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <figure><img src="images/cccc00bd2d00df4bbe1608056da240f22b95b318.png" alt="qsdf"></figure>
+                        <div class="content">
+                            <span class="date">21/07/2020</span>
+                            <h3>Titre</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum dolore et adipisci
+                                rerum nemo ullam odit! Aperiam, natus error impedit nihil repudiandae, ipsam illum ea
+                                fugiat adipisci, tempore est?
+                            </p>
+                            <a href="" class="link">Lire la suite</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
