@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-image: linear-gradient(180deg, #EEEEE0, #D8D8D8 53%, #C3C1C1 79%);
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    height: auto;
+ 
+}
+
+
+main {
+    display: flex;
+}
+
+main.connexion {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#identification {
+    padding: 2rem;
+    background: #FFFFFF;
+    border: 1px solid #F6F6F6;
+    box-shadow: 0 10px 12px -10px rgba(0, 0, 0, 0.50);
+    border-radius: 13px;
+    min-width: 500px;
+}
+
+#identification img {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+#identification form>div {
+    margin-bottom: 1.5rem;
+}
+
+#identification label {
+    display: block;
+    font-size: .825rem;
+    font-weight: bold;
+}
+
+#identification input {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+#identification a {
+    display: block;
+    text-align: center;
+    color: #000;
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+#identification a.btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+#identification a:hover {
+    color: red;
+}
+
+#identification a.btn:hover {
+    background-color: red;
+    color: #ffffff;
+}
+
+#identification .links>* {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+main > aside {
+    flex-basis: 300px;
+    background-color: white;
+}
+
+main > aside img {
+display: block;
+ padding: 1rem;
+ margin: 0 auto 2rem;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+aside nav ul li:not(:first-child) {
+    border-top:1px solid #F2F2F2;
+}
+
+aside nav ul li a{
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+    color:#262634;
+    padding: .35rem 0 .35rem 2rem;
+    background-image:url(../image/right.svg);
+    background-repeat: no-repeat;
+    background-position: left 0;
+}
+
+
+main > #content {
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    padding: 1rem;
+    background-image: linear-gradient(180deg, #EEEEE0, #D8D8D8 53%, #C3C1C1 79%);
+    background-repeat: no-repeat;
+}
+
+main > #content .header {
+    font-size:.85rem;
+    text-align: right;
+}
+main > #content > h1 {
+    text-align: center;
+    font-size:2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+main > #content .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main > #content .dashboard .bloc {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    margin: 1.5rem 4rem;
+    position: relative;
+}
+
+.wrapper {
+    padding: 1.5rem;
+}
+.wrapper-table {
+    padding: .5rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.35rem;
+}
+h4 {
+    font-size: 1rem;
+}
+h5 {
+    font-size: .85rem;
+}
+
+
+figure {
+    margin: 0 0 -2px 0;
+}
+
+figure img{
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, 0.50);
+    color:white;
+    padding: 1rem .5rem;
+    position: absolute;
+    bottom:0;
+}
+
+.cube {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rosybrown;
+    position: absolute;
+}
+.cube:nth-child(1) {
+    background-color: pink;
+    left: 0;
+    top: 0;
+}
+.cube:nth-child(2) {
+    background-color: red;
+    right: 0;
+    top: 0;
+}
+
+.cube:nth-child(3) {
+    background-color: blue;
+    right: 0;
+    bottom: 0;
+}
+.cube:nth-child(4) {
+    background-color: rebeccapurple;
+    left: 0;
+    bottom: 0;
+}
+
+
+table {
+    border: 0;
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    text-align: center;
+   
+}
+table th {
+    padding:1rem 0;
+}
+table td{ padding: .75rem;}
+table td:first-of-type {
+    width: 40px;
+    text-align: right;
+    font-weight: bold;
+}
+table td:first-of-type {
+    border-right: 1px solid #C1C1C1;
+
+}
+table td {
+    border-bottom: 1px solid #C1C1C1;
+}
+.orange {
+    background-color: sandybrown;
+}
+.bleu {
+    background-color: skyblue;
+}
+
+table td p {
+    margin: 0;
+}

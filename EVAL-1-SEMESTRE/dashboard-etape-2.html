@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashdoard</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: red;
+        }
+        main {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+        }
+        main > aside {
+            flex-basis: 300px;
+            background-color: pink;
+        }
+        main > #content {
+            background-color: yellow;
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main > #content .dashboard{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        main > #content .dashboard .bloc {
+            background-color: white;
+            margin: 1.5rem 3rem;
+            min-width: 400px;
+            min-height: 300px;
+            position: relative;
+        }
+
+        main > #content .dashboard .bloc .cube {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            position: absolute;
+        }
+        main > #content .dashboard .bloc .cube:nth-child(2){
+            right: 0;
+        }
+        main > #content .dashboard .bloc .cube:nth-child(3){
+            left: 0;
+            bottom: 0;
+        }
+        main > #content .dashboard .bloc .cube:nth-child(4){
+            right: 0;
+            bottom: 0;
+        }
+
+        main > #content .header {
+            background-color: rebeccapurple;
+        }
+
+        main > #content > h1 {
+            text-align: center;
+            background-color: royalblue;
+        }
+        .wrapper {
+            padding: 1rem;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <main>
+        <aside>
+           <img src="" alt="">
+           <nav>
+               <ul>
+                   <li><a href="">lein</a></li>
+                   <li><a href="">lein</a></li>
+                   <li><a href="">lein</a></li>
+                   <li><a href="">lein</a></li>
+                   <li><a href="">lein</a></li>
+                   <li><a href="">lein</a></li>
+               </ul>
+           </nav>    
+        </aside>
+        <section id="content">
+            <div class="header">Bonjour qsldkf jqlsjd f</div>
+            <h1>Dashboard</h1>
+            <div class="dashboard">
+                <div class="bloc">
+                    <div class="wrapper">
+                        <h1>qsdflqsd,qsldfjq,qslkdqsdljq</h1>
+                        <h2>qsdflqsd,qsldfjq,qslkdqsdljq</h2>
+                        <h3>qsdflqsd,qsldfjq,qslkdqsdljq</h3>
+                        <h4>qsdflqsd,qsldfjq,qslkdqsdljq</h4>
+                        <h5>qsdflqsd,qsldfjq,qslkdqsdljq</h5>
+                    </div>
+                </div>
+                <div class="bloc">
+                   
+            
+                </div>
+                <div class="bloc">
+                   
+
+                </div>
+                <div class="bloc">
+                    <div class="cube"></div>
+                    <div class="cube"></div>
+                    <div class="cube"></div>
+                    <div class="cube"></div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
