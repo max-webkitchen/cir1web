@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Index</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/img/logo/LOGO.png" style></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link "  href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="produit.html">Produits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contacts</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/banner/447-1600x500.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Le titre de niveau 1 sur le premier slider</h1>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/banner/755-1600x500.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Le titre de niveau 2 sur le premier slider</h2>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/banner/772-1600x500.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Le titre de niveau 2 sur le premier slider</h2>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      <section class="my-5">
+          <div class="container">
+            <form action="" class="needs-validation" novalidate>
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+                  <div class="valid-feedback">
+                    Bon ca passe ;-)
+                  </div>
+                  <div class="invalid-feedback">
+                    Merci de compléter le nom
+                  </div>
+
+                </div>
+                <div class="col">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" id="prenom" placeholder="Votre prénom" required>
+                  <div class="valid-feedback">
+                    Joli prénom
+                  </div>
+                  <div class="invalid-feedback">
+                    Merci de compléter votre prénom
+                  </div>
+                </div>
+              </div>
+              <div class="row  mb-3">
+                <div class="col-12">
+                <label for="message" class="form-label">Votre message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+                <div class="valid-feedback">
+                  OK
+                </div>
+                <div class="invalid-feedback">
+                  Merci d'indiquer un message
+                </div>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Envoyer</button>
+                </div>
+              </div>
+            </form>
+          </div>
+      </section>
+    
+   
+    <footer class="bg-dark">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link " href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="produit.html">Produits</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contact.html">Contacts</a>
+                </li>
+              </ul>
+        </div>
+    </footer>
+
+    <script>
+      (function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+      </script>
+
+
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
