@@ -1,0 +1,56 @@
+h1{
+    color: red;
+	background-color: white;
+    width: 110px;
+	height: 50px;
+    border: 5px solid #777;
+    border-radius: 15px;
+    box-shadow: 3px 3px 9px orange;
+}
+h2{
+	background-color: white;
+    width: 300px;
+	height: 40px;
+    border: 5px solid #777;
+    border-radius: 15px;
+    box-shadow: 3px 3px 9px orange; 
+}
+
+.p1{
+    color: black;
+}
+
+.p2{
+    color: maroon;
+	margin-left: 230px;
+	text-align: justify;
+	width: 620px;
+}
+img{
+	width: 200px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+div{
+    background-color: #89B;
+    width: 900px;
+	height: 300px;
+    border: 5px solid #777;
+    border-radius: 15px;
+    box-shadow: 3px 3px 9px orange;
+}
+
+.divD{
+    background-color: #89B;
+    width: 900px;
+	height: 150px;
+    border: 5px solid #777;
+    border-radius: 15px;
+    box-shadow: 3px 3px 9px orange;
+}
+
+body{
+	background-image: url("back2.gif");
+}
