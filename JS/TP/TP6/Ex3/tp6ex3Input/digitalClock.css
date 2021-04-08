@@ -1,0 +1,57 @@
+body{
+    background-color:black;
+}
+.segment0 { left: 20px; top: 5px; width: 60px; height: 0px; }
+.segment1 { left: 5px; top: 20px; width: 0px; height: 60px; }
+.segment2 { left: 95px; top: 20px; width: 0px; height: 60px; }
+.segment3 { left: 20px; top: 95px; width: 60px; height: 0px; }
+.segment4 { left: 5px; top: 110px; width: 0px; height: 60px; }
+.segment5 { left: 95px; top: 110px; width: 0px; height: 60px; }
+.segment6 { left: 20px; top: 185px; width: 60px; height: 0px; }
+
+.led {
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    height : 10px;
+    width : 10px;
+    background: #2df;
+
+}
+
+.segment {
+    position: absolute;
+    border-radius: 10px;
+    border: 8px solid #2df;
+    transition: all 0.2s linear;
+}
+
+.shiftedClock{
+    position: absolute;
+    top:300px;
+    left:100px;
+}
+
+.clock > div {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    height: 200px;
+}
+
+.clock > .colon {
+    font-size: 100px;
+    height: 150px;
+    width: 40px;
+    top: -75px;
+    color: #2df;
+    text-align: center;
+}
+
+.off {
+
+    transition: all 0.2s linear;
+    opacity: 0.2;
+}
