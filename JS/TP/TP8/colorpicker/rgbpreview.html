@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>RGB Preview</title>
+    <link rel="stylesheet" type="text/css" href="rgbpreview.css">
+</head>
+<body>
+    <div class="colorpicker">
+        <div class="preview" id="preview"></div>
+        <div id="rgb">#ffffff</div>
+        <div id="sliders" class="sliders">
+            <div>
+                <label class="label" for="rValue">Red</label>
+                <input type="range" min="0" max="255" value="255" class="slider" id="rValue" name="rValue">
+            </div>
+            
+            <div>
+                <label class="label" for="gValue">Green</label>
+                <input type="range" min="0" max="255" value="255" class="slider" id="gValue" name="gValue">
+            </div>
+            
+            <div>
+                <label class="label" for="bValue">Blue</label>
+                <input type="range" min="0" max="255" value="255" class="slider" id="bValue" name="bValue">
+            </div>
+            
+        </div>
+    </div>
+  
+    
+    <script src="rgbpreview.js"></script>
+    
+</body>
+</html>

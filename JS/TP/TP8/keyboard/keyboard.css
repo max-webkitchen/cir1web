@@ -1,0 +1,23 @@
+
+
+.released {
+    transition: 300ms ease-in 0s;
+    background : transparent;
+}
+
+
+.pressed {
+    background: cyan;
+}
+
+.key{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    border : 1px solid black;
+    padding : 10px;
+    font-family: Arial, serif;
+    font-size:20px;
+}
+
+
